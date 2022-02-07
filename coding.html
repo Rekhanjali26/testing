@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>VNV</title>
+    <!-- In <head> add scripts and styles to your html page -->
+    <script src="https://chat.valentabpo.onereach.ai/lib/richWebChat.umd.min.js"></script>
+    <link
+      rel="stylesheet"
+      href="https://chat.valentabpo.onereach.ai/lib/richWebChat.css"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <!-- insert code below into <body> -->
+    <div id="rwc"></div>
+    <script>
+      document.addEventListener("DOMContentLoaded", function () {
+        var RWC = richWebChat.default;
+        var app = new RWC({
+          container: "#rwc", // DOM element selector where chat will be inserted
+          chatUrl:
+            "https://chat.valentabpo.onereach.ai/y2L3j9GsTDK1yvKBgWbpFw/0yibjez", // url of your chat. required
+          autoExpandDelay: 15000,
+          position: "bottom-right",
+          inviteMessage: "",
+          inviteButton: "",
+          inviteImage: undefined,
+          showCloseIcon: false,
+          inviteTimeout: 5000,
+          allowChangeChatWindowSize: true,
+          allowDrag: true,
+          widgetColor: "#409fec",
+          allowStartNewConversation: true,
+          thumbLogo: undefined,
+          animation: "pulse", // 'pulse', 'ring', 'zoom',
+          appearance: {
+            blurredBackground: false,
+          },
+          pageData: {
+            fname: "foo",
+          },
+        });
+      });
+    </script>
+  </body>
+</html>
